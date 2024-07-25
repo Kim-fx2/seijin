@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            /* background-repeat: no-repeat; */
+            /* background: 100%; */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 20px auto;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+        .phone {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        @media (max-width: 768px) {
+            .profile-photo {
+                width: 100px;
+                height: 100px;
+            }
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+            .phone {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <h1>Connect with Me on Social Media</h1>
+        <h1>Kolawole Oyewole (design_seijin)</h1>
+        <img src="1721899968102.jpeg" alt="Your Photo" class="profile-photo">
+        <p class="phone">Phone: +2349056738008</p>
+        <div class="social-icons">
+            <!-- <a href="https://www.facebook.com/yourprofile" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a> -->
+            <a href="https://wa.me/+2349056738008" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/_designseijin1/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/design_seijin" target="_blank">
+                <img src="x.com.png" alt="Twitter">
+            </a>
+            <!-- <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+            </a> -->
+            <a href="https://www.behance.net/Oyewolekolawole" target="_blank">
+                <img src="behance.png" alt="Behance">
+            </a>
+        </div>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAqVbndbGTXP3FLscP8RqZ0vPXCHgSBmmQ",
+          authDomain: "profiles-bc748.firebaseapp.com",
+          projectId: "profiles-bc748",
+          storageBucket: "profiles-bc748.appspot.com",
+          messagingSenderId: "909368011266",
+          appId: "1:909368011266:web:2c51850ec1ba50a9ce951b",
+          measurementId: "G-0VX410P3J5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
